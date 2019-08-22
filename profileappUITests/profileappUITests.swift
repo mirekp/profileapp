@@ -20,9 +20,10 @@ class profileappUITests: XCTestCase {
 
     override func tearDown() {
         super.tearDown()
+        app = nil
     }
 
-    func testItDisplaysData() {
+    func testHappyPath() {
         //given
         configureHappyPath()
         
@@ -30,7 +31,9 @@ class profileappUITests: XCTestCase {
         app.launch()
         
         //then
-        XCTAssertTrue(XCUIApplication().navigationBars.staticTexts["John Appleseed"].exists)
+        XCTAssertTrue(XCUIApplication().staticTexts["John Appleseed"].exists)
+        XCTAssertTrue(XCUIApplication().staticTexts["Client1"].exists)
+        XCTAssertTrue(XCUIApplication().staticTexts["Client2"].exists)
     }
     
     private func configureHappyPath() {

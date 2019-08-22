@@ -23,10 +23,21 @@ class NetworkService {
     }
     
     func getProfile(_ completion: @escaping (Result<Profile, Errors>) -> Void) {
+        // hook for data injection in UI test mode
+        if let reply = ProcessInfo.processInfo.environment["getProfile-reply"], let data = Data(base64Encoded: reply) {
+            do {
+                let profile = try decodeProfile(data)
+                completion(.success(profile))
+            } catch(let error) {
+                completion(.failure(.unparseableData(error)))
+            }
+            return
+        }
+        
         session.dataTask(with: getProfileEndpoint) { (data, response, error) in
             // let's call the receiver on the main thread as this is what they likely expect
             DispatchQueue.main.async {
-                guard let data = data, error == nil, let response = response else {
+                guard let data = data, error == nil else {
                     completion(.failure(.networkError(error)))
                     return
                 }
@@ -36,12 +47,16 @@ class NetworkService {
                         return
                 }
                 do {
-                    let profile = try JSONDecoder().decode(Profile.self, from: data)
+                    let profile = try self.decodeProfile(data)
                     completion(.success(profile))
-                } catch(let exception) {
-                    completion(.failure(.unparseableData(exception)))
+                } catch(let error) {
+                    completion(.failure(.unparseableData(error)))
                 }
             }
             }.resume()
+    }
+    
+    private func decodeProfile(_ data: Data) throws -> Profile {
+        return try JSONDecoder().decode(Profile.self, from: data)
     }
 }

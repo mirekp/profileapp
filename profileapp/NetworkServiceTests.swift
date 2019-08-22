@@ -46,6 +46,7 @@ class NetworkServiceTests: XCTestCase {
 
     override func tearDown() {
         networkService = nil
+        mockURLSession = nil
         super.tearDown()
     }
     
@@ -122,7 +123,7 @@ class NetworkServiceTests: XCTestCase {
         let expectedError = NetworkService.Errors.networkError(nil)
         let expectation = XCTestExpectation(description: "getProfileCallbackCalled")
         let expectedResponse = URLResponse(url: URL(string: "http://example.com")!, mimeType: "something", expectedContentLength: 0, textEncodingName: nil)
-        mockURLSession.dataTaskCompletion = (data: Data(), response: expectedResponse, error: MockError.mockError)
+        mockURLSession.dataTaskCompletion = (data: validJson.data(using: .utf8), response: expectedResponse, error: MockError.mockError)
         
         //when
         networkService.getProfile { result in
