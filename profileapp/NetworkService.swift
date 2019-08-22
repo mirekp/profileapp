@@ -16,10 +16,14 @@ class NetworkService {
     }
     
     let session: URLSession
-    let getProfileEndpoint = URL(string: "https://gist.githubusercontent.com/mirekp/afb5bf6c4b843dae279845bf85036a26/raw")!
+    let getProfileEndpoint: URL
     
     init(session: URLSession = URLSession.shared) {
         self.session = session
+        guard let getProfileEndpoint = URL(string: "https://gist.githubusercontent.com/mirekp/afb5bf6c4b843dae279845bf85036a26/raw") else {
+            fatalError("API endpoint not configured correctly")
+        }
+        self.getProfileEndpoint = getProfileEndpoint
     }
     
     func getProfile(_ completion: @escaping (Result<Profile, Errors>) -> Void) {

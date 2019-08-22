@@ -60,17 +60,17 @@
 		FDB40694230D51A100D73CB3 /* profileappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileappUITests.swift; sourceTree = "<group>"; };
 		FDB40696230D51A100D73CB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDB406A7230D58B900D73CB3 /* valid-profile.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "valid-profile.json"; sourceTree = "<group>"; };
-		FDB406A9230D5C7300D73CB3 /* ProfileViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewControllerTests.swift; sourceTree = "<group>"; };
+		FDB406A9230D5C7300D73CB3 /* ProfileViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewControllerTests.swift; path = ../profileappTests/ProfileViewControllerTests.swift; sourceTree = "<group>"; };
 		FDB406AB230D5D8500D73CB3 /* ProfileViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewInteractor.swift; sourceTree = "<group>"; };
 		FDB406AE230D5FBD00D73CB3 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		FDB406B0230DAEBC00D73CB3 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		FDB406B2230DAEEE00D73CB3 /* WorkExperienceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkExperienceCell.swift; sourceTree = "<group>"; };
 		FDB406B5230DBA6500D73CB3 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		FDF99796230E95F600CF526A /* ProfileViewInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewInteractorTests.swift; sourceTree = "<group>"; };
+		FDF99796230E95F600CF526A /* ProfileViewInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewInteractorTests.swift; path = ../profileappTests/ProfileViewInteractorTests.swift; sourceTree = "<group>"; };
 		FDF99799230E9B0C00CF526A /* MockProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockProfilePresenter.swift; sourceTree = "<group>"; };
 		FDF9979B230E9CD100CF526A /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
 		FDF9979D230EB7A500CF526A /* MockProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockProfileInteractor.swift; sourceTree = "<group>"; };
-		FDF9979F230F03E600CF526A /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		FDF9979F230F03E600CF526A /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkServiceTests.swift; path = ../profileappTests/NetworkServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

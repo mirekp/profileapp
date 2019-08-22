@@ -34,6 +34,9 @@ class profileappUITests: XCTestCase {
         XCTAssertTrue(XCUIApplication().staticTexts["John Appleseed"].exists)
         XCTAssertTrue(XCUIApplication().staticTexts["Client1"].exists)
         XCTAssertTrue(XCUIApplication().staticTexts["Client2"].exists)
+        XCTAssertTrue(XCUIApplication().staticTexts["Role1"].exists)
+        XCTAssertTrue(XCUIApplication().staticTexts["Location1"].exists)
+        XCTAssertTrue(XCUIApplication().staticTexts["Jan 2019 - Jul 2019"].exists)
     }
     
     private func configureHappyPath() {
