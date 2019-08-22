@@ -39,8 +39,23 @@ class profileappUITests: XCTestCase {
         XCTAssertTrue(XCUIApplication().staticTexts["Jan 2019 - Jul 2019"].exists)
     }
     
+    func testErrorPath() {
+        //given
+        configureErrorPath()
+        
+        //when
+        app.launch()
+        
+        //then
+        XCTAssertTrue(XCUIApplication().alerts["Something went wrong"].exists)
+    }
+    
     private func configureHappyPath() {
         app.launchEnvironment["getProfile-reply"] = validResponse
+    }
+    
+    private func configureErrorPath() {
+        app.launchEnvironment["getProfile-reply"] = "{ This is a deliberately malformed json data }".data(using: .utf8)?.base64EncodedString()
     }
     
     private var validResponse: String? {
