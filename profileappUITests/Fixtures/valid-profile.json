@@ -1,0 +1,22 @@
+{
+    "name": "John Appleseed",
+    "summary": "sample-summary",
+    "work_experience" : [
+        {
+            "client": "Client1",
+            "location": "Location1",
+            "date_from": "2019-01-01T18:25:43.511Z",
+            "date_to": "2019-07-31T18:25:43.511Z",
+            "role": "Role1",
+            "summary": "Summary1"
+        },
+        {
+            "client": "Client2",
+            "location": "Location2",
+            "date_from": "2017-06-01T18:25:43.511Z",
+            "date_to": "2018-12-31T18:25:43.511Z",
+            "role": "Role2",
+            "summary": "Summary2"
+        }
+    ]
+}
