@@ -17,7 +17,7 @@ This repository contains an outcome of a coding task. It demonstrates a simple o
 ## Implementation Notes
 
 * As I wanted to timebox the solution I took a minimalistic aproach with a very basic feature set and simple UI to satisfy the requirement.
-* The code is structured using a simplified variation of a [Clean Swift](https://clean-swift.com) architecture where presentation logic is separated from business logic (interactior) and service layer.
+* The code is structured using a simplified variation of the [Clean Swift](https://clean-swift.com) architecture where presentation logic is separated from business logic (interactior) and service layer.
 * The code is fully covered by behavioral-style unit tests and has been developed using TDD principles.
 * The app is also covered by an integration UI test which I used to drive the implementation.
 * As there was a requirement to not use any exterenal libraries, the UI test use a very simple test injection hook in the app. Should there was no such requirement a fully integrated test web server (such as https://github.com/swisspol/GCDWebServer or https://github.com/square/okhttp/tree/master/mockwebserver) would have been used for full networking dependency injection in UI tests.
