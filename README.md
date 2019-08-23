@@ -11,7 +11,7 @@ This repository is meant to contain an outcome of a coding task. It demonstrates
 
 ## Implementation Notes
 
-* As I wanted to timebox the solution to just a couple of hours I took a minimalistic aproach with a very basic feature set and simple UI to satisfy the requirement. It is not meant to be submmitted to the AppStore without designing icon and other polisghing tasks first :).
+* As I wanted to timebox the solution I took a minimalistic aproach with a very basic feature set and simple UI to satisfy the requirement. It is not meant to be submmitted to the AppStore without designing icon and other polisghing tasks first :).
 * The code is structured using a simplified variation of a Clean Swift architecture where presentation logic is separated from business logic (interactior) and service layer.
 * The code is fully covered by behavioral-style unit tests and has been developed using TDD principles.
 * The app is also covered by an integration UI test which I used to drive my implementation.
