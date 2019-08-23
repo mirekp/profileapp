@@ -7,12 +7,12 @@ This repository contains an outcome of a coding task. It demonstrates a simple o
 ## What it is not?
 
 * The project is only designed to demonstrate coding techniques. Such as TDD, JSON parsing, error handling, presentation design patterns, responsibility separation.
-* It is not meant to be a complete meaningful app that is to be submmitted to the AppStore. At least not without designing App icon and other polishing tasks first 😊
+* It is not meant to demonstrate UI design skills or be a complete meaningful app that is to be submmitted to the App Store. At least not without designing App icon and other polishing tasks first 😊
 
 ## How to run?
 
 * The project file should open & compile & run in the Xcode 10.3 which is the latest production version available. Sorry about not using Xcode 10.1 due to practical reasons.
-* What limits the support for older versions of Xcode (or  Swift compiler) is most liely my use of the new `Result` type and `Decodable` protocol. I think these are justified as they make the JSON and error handling implementation elegant and I really wanted to demonstrate that in this task. Let's hope this will be considered as a nice implementation detail and not breach of any requirements 😊
+* What limits the support for older versions of Xcode (or  Swift compiler) is the use of the new `Result` type and `Decodable` protocol. I think these are justified as they make the JSON and error handling implementation elegant and I really wanted to demonstrate that in this task. Let's hope this will be considered as a nice implementation detail and not breach of any requirements 😊
 
 ## Implementation Notes
 
